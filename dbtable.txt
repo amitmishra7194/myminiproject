@@ -67,7 +67,7 @@ SQL> desc mvc_employees;
  PINCODE                                            NUMBER(10)
 
 
-
+// add new line
 
 SQL> create table user_details(userid varchar2(20),
                                name varchar2(20),
