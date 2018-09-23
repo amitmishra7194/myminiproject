@@ -1,0 +1,103 @@
+CREATE TABLE mvc_employees(eid number(10) primary key,
+  ename varchar2(20),
+  age number(20),
+  address varchar2(20),
+  department varchar2(20),
+  city varchar2(10),
+  state varchar(10),
+  pincode number(10));
+  
+  
+  
+SQL> desc mvc_employees;
+
+ Name                                  Null?          Type
+ ---------------------------------   -----------   -------------------------
+ EID                                  NOT NULL        NUMBER(10)
+ ENAME                                                VARCHAR2(20)
+ AGE                                                  NUMBER(20)
+ ADDRESS                                              VARCHAR2(20)
+ DEPARTMENT                                           VARCHAR2(20)
+ CITY                                                 VARCHAR2(10)
+ STATE                                                VARCHAR2(10)
+ PINCODE                                              NUMBER(10)
+
+ ===================================================================================
+ CREATE TABLE mvc_customers(cid number(10) primary key,
+  cname varchar2(20),
+  cage number(20),
+  address varchar2(20),
+  city varchar2(10),
+  state varchar(10),
+  pincode number(10));
+ 
+ 
+ SQL> desc mvc_customers;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CID                                       NOT NULL NUMBER(10)
+ CNAME                                              VARCHAR2(20)
+ CAGE                                               NUMBER(20)
+ ADDRESS                                            VARCHAR2(20)
+ CITY                                               VARCHAR2(10)
+ STATE                                              VARCHAR2(10)
+ PINCODE                                            NUMBER(10)
+ 
+ ====================================================================================
+ CREATE TABLE mvc_students(sid number(10) primary key,
+  sname varchar2(20),
+  sage number(20),
+  address varchar2(20),
+  course varchar2(20),
+  city varchar2(10),
+  state varchar(10),
+  pincode number(10));
+ 
+ 
+ SQL> desc mvc_students;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SID                                       NOT NULL NUMBER(10)
+ SNAME                                              VARCHAR2(20)
+ SAGE                                               NUMBER(20)
+ ADDRESS                                            VARCHAR2(20)
+ COURSE                                             VARCHAR2(20)
+ CITY                                               VARCHAR2(10)
+ STATE                                              VARCHAR2(10)
+ PINCODE                                            NUMBER(10)
+
+
+
+
+SQL> create table user_details(userid varchar2(20),
+                               name varchar2(20),
+                               age number(3),
+                               email varchar2(30) ,
+                               city varchar2(20),
+                               state varchar2(20),
+                               mobile number(15),
+                               password varchar2(20),
+                               primary key(userid,email,mobile)
+                               );
+
+
+SQL> desc user_details;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERID                                    NOT NULL VARCHAR2(20)
+ NAME                                               VARCHAR2(20)
+ AGE                                                NUMBER(3)
+ EMAIL                                     NOT NULL VARCHAR2(30)
+ CITY                                               VARCHAR2(20)
+ STATE                                              VARCHAR2(20)
+ MOBILE                                    NOT NULL NUMBER(15)
+ PASSWORD                                           VARCHAR2(20)
+
+
+
+
+SQL> desc userlist;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ UNAME                                     NOT NULL VARCHAR2(20)
+ PWD                                                VARCHAR2(20)
